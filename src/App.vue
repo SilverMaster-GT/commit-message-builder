@@ -95,7 +95,7 @@ const copyToClipboard = async () => {
 
 // Validación básica del asunto (ej. longitud)
 const subjectLength = computed<number>(() => commitSubject.value.length);
-const subjectWarning = computed<string>(() => subjectLength.value > 72 ? `¡Asunto demasiado largo! (${subjectLength.value}/72)` : '');
+const subjectWarning = computed<string>(() => subjectLength.value > 49 ? `¡Asunto demasiado largo! (${subjectLength.value}/49)` : '');
 </script>
 
 <template>
